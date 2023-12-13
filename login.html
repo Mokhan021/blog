@@ -1,0 +1,185 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login:Here</title>
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="css/mobile.css">
+
+
+    <script src="https://fontawesome.com/v5/icons/user?f=classic&s=solid" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/BLOG2.1.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+
+                <li class="underline"><a href="/">HOME</a></li>
+                <li class="underline"><a href="/Contact.html">CONTACT US</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto " style="margin-top: 20px;">
+        <hr>
+    </div>
+
+    <div class="container navigation max-width-1 m-auto">
+
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="namefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+
+
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="email" placeholder="Email">
+
+
+
+                        </div>
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Password">
+
+
+                            </div>
+                            <p>Lost Password <a href="#">Click Here!</a></p>
+                        </div>
+                        <div class="btn-field">
+                            <button type="button" id="signupbtn">Sign Up</button>
+                            <button type="button" class="disable" id="signinbtn">Sign in</button>
+                        </div>
+            </form>
+
+            </div>
+            </div>
+            <script>
+                let signupbtn = document.getElementById("signupbtn");
+                let signinbtn = document.getElementById("signinbtn");
+                let namefield = document.getElementById("namefield");
+                let title = document.getElementById("title");
+
+                signinbtn.onclick = function() {
+                    namefield.style.maxHeight = "0";
+                    title.innerHTML = "Sign In";
+                    signupbtn.classList.add("disable");
+                    signinbtn.classList.remove("disable");
+                }
+                signupbtn.onclick = function() {
+                    namefield.style.maxHeight = "60px";
+                    title.innerHTML = "Sign Up";
+                    signupbtn.classList.remove("disable");
+                    signinbtn.classList.add("disable");
+                }
+            </script>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto" style="margin-top: 18px;">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/BLOG2.1.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+
+                <li class="underline"><a href="/">HOME</a></li>
+                <li class="underline"><a href="/Contact.html">CONTACT US</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto" style="margin-top: 15px;">
+        <hr>
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome, Friend!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
